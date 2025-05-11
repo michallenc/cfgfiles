@@ -1,0 +1,3 @@
+mmake () {
+  make -j$(($(nproc) * 2)) -l$(nproc) $1
+}
