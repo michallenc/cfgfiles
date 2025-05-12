@@ -1,0 +1,9 @@
+# C
+.cache
+.gdb_history
+
+# Python
+__pycache__/
+
+# nix
+result*
