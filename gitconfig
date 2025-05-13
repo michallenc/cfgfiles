@@ -1,0 +1,10 @@
+[user]
+	name = Michal Lenc
+	email = michallenc@seznam.cz
+	signingkey = /home/michal/.ssh/id_ed25519.pub
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[core]
+	excludesFile = ~/.gitignore
