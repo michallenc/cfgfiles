@@ -8,3 +8,5 @@
 	gpgsign = true
 [core]
 	excludesFile = ~/.gitignore
+[alias]
+	flease = push --force-with-lease
