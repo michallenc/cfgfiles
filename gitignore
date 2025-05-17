@@ -2,6 +2,10 @@
 .cache
 .gdb_history
 
+# Zig
+.zig-cache/
+zig-out/
+
 # Python
 __pycache__/
 
