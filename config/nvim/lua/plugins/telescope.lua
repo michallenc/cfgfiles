@@ -16,9 +16,11 @@ return {
 				mappings = {
 					n = {
 						['<A-CR>'] = "select_vertical",
+						['<A-BS>'] = "select_horizontal",
 					},
 					i = {
 						['<A-CR>'] = "select_vertical",
+						['<A-BS>'] = "select_horizontal",
 						['<esc>'] = actions.close,
 					},
 				},
