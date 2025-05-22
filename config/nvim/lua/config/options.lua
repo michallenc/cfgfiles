@@ -18,6 +18,8 @@ opt.wildmode = longest, list
 opt.wrap = false
 opt.colorcolumn = "80"
 opt.swapfile = false
+opt.splitright = true
+opt.splitbelow = true
 vim.g.mapleader = "-"
 vim.diagnostic.config({ virtual_text = true })
 
