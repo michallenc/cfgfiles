@@ -22,6 +22,7 @@ opt.splitright = true
 opt.splitbelow = true
 vim.g.mapleader = "-"
 vim.diagnostic.config({ virtual_text = true })
+vim.o.pumheight = 15
 
 -- Keymaps
 vim.keymap.set("n", "<C-Y>", "<C-R>")

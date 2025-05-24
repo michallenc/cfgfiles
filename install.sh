@@ -7,4 +7,5 @@ sudo ln -s $(pwd -P)/scripts/gitbmerge /usr/local/bin/gitbmerge
 sudo ln -s $(pwd -P)/scripts/mmake /usr/local/bin/mmake
 ln -s $(pwd -P)/config/kitty ~/.config/kitty
 ln -s $(pwd -P)/config/nvim ~/.config/nvim
+lb -s $(pwd -P)/nix.conf /etc/nix/nix.conf
 
