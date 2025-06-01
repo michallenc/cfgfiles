@@ -35,5 +35,5 @@ vim.keymap.set('', '<leader>y', '"+y')           -- yank selection
 vim.keymap.set('', '<leader>Y', '"+y$')          -- yank line
 vim.keymap.set('n', '<leader>p', '"+p')          -- paste selection
 vim.keymap.set('n', '<leader>P', '"+P')          -- paste line
-vim.keymap.set({ 'n', 'v' }, '<leader>d', '"+d') -- delete motion
-vim.keymap.set({ 'n', 'v' }, '<leader>D', '"+D') -- delete line
+vim.keymap.set({ 'n', 'v' }, '<leader>x', '"+d') -- delete motion
+vim.keymap.set({ 'n', 'v' }, '<leader>X', '"+D') -- delete line
