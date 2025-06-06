@@ -9,4 +9,4 @@
 [core]
 	excludesFile = ~/.gitignore
 [alias]
-	flease = push --force-with-lease
+	please = push --force-with-lease
