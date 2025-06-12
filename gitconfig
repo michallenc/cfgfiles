@@ -10,3 +10,4 @@
 	excludesFile = ~/.gitignore
 [alias]
 	please = push --force-with-lease
+	fix = commit --fixup=HEAD

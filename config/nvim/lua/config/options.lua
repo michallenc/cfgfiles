@@ -23,6 +23,8 @@ opt.splitbelow = true
 vim.g.mapleader = "-"
 vim.diagnostic.config({ virtual_text = true })
 vim.o.pumheight = 15
+vim.o.cursorline = true
+vim.o.cursorlineopt = "number"
 
 -- Keymaps
 vim.keymap.set("n", "<C-Y>", "<C-R>")
