@@ -87,6 +87,9 @@ return {
 					settings = {
 						clangd = {
 							fallbackFlags = { "-std=gnu2x" }, -- Example: Set C standard
+							cmd = {
+								"--header-insertion=never",
+							},
 						},
 					},
 				})

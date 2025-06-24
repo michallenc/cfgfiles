@@ -8,5 +8,5 @@ sudo ln -s $(pwd -P)/scripts/mmake /usr/local/bin/mmake
 ln -s $(pwd -P)/config/kitty ~/.config/kitty
 ln -s $(pwd -P)/config/nvim ~/.config/nvim
 ln -s $(pwd -P)/config/clangd ~/.config/clangd
-lb -s $(pwd -P)/nix.conf /etc/nix/nix.conf
+sudo ln -s $(pwd -P)/nix.conf /etc/nix/nix.conf
 
