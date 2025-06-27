@@ -1,6 +1,7 @@
 # C
 .cache
 .gdb_history
+compile_commands.json
 
 # Zig
 .zig-cache/
