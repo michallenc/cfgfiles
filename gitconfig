@@ -8,6 +8,7 @@
 	gpgsign = true
 [core]
 	excludesFile = ~/.gitignore
+	editor = "nvim"
 [alias]
 	please = push --force-with-lease
 	fix = commit --fixup=HEAD
