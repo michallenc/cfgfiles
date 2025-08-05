@@ -1,4 +1,4 @@
-local ignore_filetypes_list = { "%.a", "%.0", "%.o", "%.dat", "%.exe", "%.bin" }
+local ignore_filetypes_list = { "%.a", "%.0", "%.o", "%.dat", "%.exe", "%.bin", ".git/" }
 
 -- Fuzzy search
 return {
@@ -28,6 +28,11 @@ return {
 				vimgrep_arguments = {
 					'rg',
 					'--column',
+				}
+			},
+			pickers = {
+				find_files = {
+					hidden = true,
 				}
 			},
 		})
