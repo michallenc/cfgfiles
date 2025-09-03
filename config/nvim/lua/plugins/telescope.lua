@@ -44,5 +44,8 @@ return {
 
 		vim.keymap.set('n', '<C-P>', builtin.find_files, opts)
 		vim.keymap.set('n', '<C-S>', builtin.live_grep, opts)
+		-- grep currently selected word
+		vim.keymap.set('n', '<C-R>', builtin.grep_string, opts)
+		vim.keymap.set('v', '<C-R>', builtin.grep_string, opts)
 	end,
 }
