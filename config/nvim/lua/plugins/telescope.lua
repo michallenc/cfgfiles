@@ -3,11 +3,12 @@ local ignore_filetypes_list = { "%.a", "%.0", "%.o", "%.dat", "%.exe", "%.bin", 
 -- Fuzzy search
 return {
 	'nvim-telescope/telescope.nvim',
-	tag = '0.1.8',
+	tag = 'v0.2.2',
 	dependencies = { 'nvim-lua/plenary.nvim', { "nvim-telescope/telescope-fzf-native.nvim", build = "make" } },
 	config = function()
 		local telescope = require('telescope')
 		local actions = require('telescope.actions')
+		local builtin = require('telescope.builtin')
 
 		telescope.setup({
 			defaults = {
