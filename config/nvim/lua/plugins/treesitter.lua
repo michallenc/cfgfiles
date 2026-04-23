@@ -1,15 +1,14 @@
 -- Syntax highlighting
 return {
 	"nvim-treesitter/nvim-treesitter",
-	event = { "BufReadPre", "BufNewFile" }, -- Lazy loading
+	branch = 'main',
+	lazy = false,
 	build = ":TSUpdate",                 -- Ensure parsers up to date
 	dependencies = {
 		"windwp/nvim-ts-autotag",
 	},
 	config = function()
-		local treesitter = require('nvim-treesitter.configs')
-
-		treesitter.setup({
+		require('nvim-treesitter').setup({
 			auto_install = true, -- Automatically install parsers for missing languages
 			sync_install = false, -- Disable synchronous parser installation to avoid blocking
 			-- Enable highlighting, indenting, auto-tagging based on tree-sitter
