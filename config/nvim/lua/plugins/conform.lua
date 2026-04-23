@@ -3,6 +3,12 @@ return {
 	"stevearc/conform.nvim",
 	config = function()
 		require("conform").setup({
+			formatters = {
+				docstrfmt = {
+					stdin = false,
+					args = { "$FILENAME" },
+				},
+			},
 			formatters_by_ft = {
 				c = { "clang-format" },
 				lua = { "stylua" },
@@ -10,6 +16,7 @@ return {
 				python = { "ruff_fix", "ruff_format", "isort" },
 				sh = { "shfmt" },
 				zig = { "zigfmt" },
+				rst = { "docstrfmt" },
 			},
 		})
 	end,
