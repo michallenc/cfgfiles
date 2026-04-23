@@ -16,26 +16,24 @@ return {
 				enable = true,
 				additional_vim_regex_highlighting = false,
 			},
-			-- Parsers for specific languages
-			ensure_installed = {
-				'json',
-				'yaml',
-				'html',
-				'markdown',
-				'markdown_inline',
-				'bash',
-				'lua',
-				'vim',
-				'python',
-				'gitignore',
-				'c',
-				'cpp',
-				'zig',
-				'meson',
-				'make',
-				'nix'
-			},
-			ignore_install = {},
+		})
+		require('nvim-treesitter').install({
+			'json',
+			'yaml',
+			'html',
+			'markdown',
+			'markdown_inline',
+			'bash',
+			'lua',
+			'vim',
+			'python',
+			'gitignore',
+			'c',
+			'cpp',
+			'zig',
+			'meson',
+			'make',
+			'nix'
 		})
 	end,
 }
