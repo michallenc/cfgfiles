@@ -26,6 +26,9 @@ vim.o.pumheight = 15
 vim.o.cursorline = true
 vim.o.cursorlineopt = "number"
 
+-- diffget fix https://github.com/neovim/neovim/issues/22696#issuecomment-3906586437
+opt.diffopt:remove("linematch:40")
+
 -- Keymaps
 vim.keymap.set("n", "<C-Y>", "<C-R>")
 vim.keymap.set("n", "<C-A>", "<C-Z>")
