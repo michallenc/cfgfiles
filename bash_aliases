@@ -17,3 +17,15 @@ fi
 
 
 export PYSUPSICTRL=~/Michal/projects/pysimcoder/pysimCoder
+
+# fzf and bat configuration
+
+export FZF_CTRL_T_OPTS="
+  --walker-skip .git,.coverage*,.venv,.pytest_cache,__pycache__,.mypy_cache,.o,*.O,*.bin,*.a,*.dat,*.exe
+  --preview 'batcat -n --color=always {}'
+  --preview-window='right,75%'
+  --bind 'ctrl-l:change-preview-window(down|hidden|)'"
+export FZF_DEFAULT_OPTS="--layout reverse --info inline --style minimal --height 99%"
+
+eval "$(fzf --bash)"
+eval "$(zoxide init bash)"
