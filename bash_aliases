@@ -6,6 +6,7 @@ alias msetup='meson setup --wipe build'
 alias mbuild='meson compile -C build'
 alias mtest='meson test -C build'
 alias mcov='msetup -Db_coverage=true && mtest && ninja -C build coverage-html'
+alias bat=batcat
 
 if [ -f /usr/local/bin/gitbmerge ]; then
     . /usr/local/bin/gitbmerge
